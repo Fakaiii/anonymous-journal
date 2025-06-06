@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Write a Journal Entry{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Write Your Journal</h2>
+    <p>Let it all out. No names, no pressure — just your truth.</p>
+
+    <form method="POST" action="/write">
+        <textarea name="content" rows="10" style="width: 100%; padding: 15px; font-size: 16px;" placeholder="Start typing here..." required></textarea>
+        <br><br>
+        <button type="submit" style="padding: 12px 25px; font-size: 16px; background-color: #333; color: white; border: none; border-radius: 8px;">Submit Entry</button>
+    </form>
+</section>
+{% endblock %}
